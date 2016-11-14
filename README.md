@@ -1,4 +1,7 @@
-# Documentation
+#Publishing System Documentation
+[&#8595;](#essential-programmer-training)
+
+First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  Second please have a read of [Why Vagrant?](https://www.vagrantup.com/docs/why-vagrant/)
 
 
 ##Highly sought after skills
