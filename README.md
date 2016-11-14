@@ -1,7 +1,7 @@
 #Publishing System Documentation
 [&#8595;](#essential-programmer-training)
 
-First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  Second please have a read of [Why Vagrant?](https://www.vagrantup.com/docs/why-vagrant/)
+First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  Second please have a read of [Why Vagrant?](https://www.vagrantup.com/docs/why-vagrant/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
 
 ##Company website
 
@@ -14,6 +14,11 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [CSS 3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3)
 - [typer.js](http://steven.codes/typerjs/)
 
+
+##Publishing System Hosting Options
+
+- [Heroku](https://www.heroku.com/)
+- [Engine Yard](https://www.engineyard.com/)
 
 
 ##Highly sought after skills
