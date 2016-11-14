@@ -3,6 +3,18 @@
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  Second please have a read of [Why Vagrant?](https://www.vagrantup.com/docs/why-vagrant/)
 
+##Company website
+
+- [GitHub Pages](https://pages.github.com/)
+- [Jekyll](https://jekyllrb.com/)
+- [kramdown](http://kramdown.gettalong.org/)
+- [Sass](http://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS 3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3)
+- [typer.js](http://steven.codes/typerjs/)
+
+
 
 ##Highly sought after skills
 
