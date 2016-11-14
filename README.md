@@ -17,6 +17,25 @@
 - [XPath Wikipedia](https://en.wikipedia.org/wiki/XPath)
 
 
+##Helpful links
+
+Creating and highlighting code blocks - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+
+Linguist langage extensions - https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
+
+How to check a file checksum - http://stackoverflow.com/questions/478722/what-is-the-best-way-to-calculate-a-checksum-for-a-file-that-is-on-my-machine
+
+Mastering Markdown - https://guides.github.com/features/mastering-markdown/
+
+Google Charts - https://developers.google.com/chart/
+
+Ruby regular expression tester - http://rubular.com
+
+RegExp tester, Open source languages - https://regex101.com
+
+Emoji cheat sheet - http://www.webpagefx.com/tools/emoji-cheat-sheet/
+
+
 ##Free online interactive easy quick courses
 
 ###Learn Git
