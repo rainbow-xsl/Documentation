@@ -3,7 +3,7 @@
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
 
-##Company website
+#Company website
 
 - [GitHub Pages](https://pages.github.com/)
 - [Jekyll](https://jekyllrb.com/)
@@ -16,13 +16,13 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [Google Charts](https://developers.google.com/chart/)
 
 
-##Publishing System Hosting Options
+#Publishing System Hosting Options
 
 - [Heroku](https://www.heroku.com/)
 - [Engine Yard](https://www.engineyard.com/)
 
 
-##Highly sought after skills
+#Highly sought after skills
 
 - [Ruby on Rails](http://rubyonrails.org/)
 - [Ubuntu](https://www.ubuntu.com/)
@@ -32,7 +32,7 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
 
 
-##Oracle VM VirtualBox
+#Oracle VM VirtualBox
 
 This section is dedicated to those that run Mac OS or Windows that need to run Ubuntu with [Oracle VM VirtualBox](https://www.virtualbox.org/).  Here is in depth [documentation](https://www.virtualbox.org/manual/ch01.html) on how to get VirtualBox running.
 
@@ -397,9 +397,145 @@ http://127.0.0.1:8808/ -> /gem-server-rdoc-style.css
 http://127.0.0.1:8808/ -> /favicon.ico
 ```
 
+#JRuby
+
+[JRuby](http://jruby.org/) requires [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to be installed and the current version for Windows is Java 111. You can use the following command to see if Java is installed on your machine:
+
+```
+C:\>java -version
+java version "1.8.0_111"
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+
+C:\>
+```
+Once you install JRuby you can check it's installed by running the next command:
+
+```
+C:\>jruby -v
+jruby 9.1.5.0 (2.3.1) 2016-09-07 036ce39 Java HotSpot(TM) 64-Bit Server VM 25.10
+1-b13 on 1.8.0_101-b13 +jit [mswin32-x86_64]
+
+C:\>
+```
+You can find out more about JRuby by running the next command:
+```
+
+C:\>jruby -h
+Usage: jruby [switches] [--] [programfile] [arguments]
+  -0[octal]         specify record separator (\0, if no argument)
+  -a                autosplit mode with -n or -p (splits $_ into $F)
+  -c                check syntax only
+  -Cdirectory       cd to directory, before executing your script
+  -d                set debugging flags (set $DEBUG to true)
+  -e 'command'      one line of script. Several -e's allowed. Omit [programfile]
+
+  -Eex[:in]         specify the default external and internal character encoding
+s
+  -Fpattern         split() pattern for autosplit (-a)
+  -G                load a Bundler Gemspec before executing any user code
+  -i[extension]     edit ARGV files in place (make backup if extension supplied)
+
+  -Idirectory       specify $LOAD_PATH directory (may be used more than once)
+  -J[java option]   pass an option on to the JVM (e.g. -J-Xmx512m)
+                      use --properties to list JRuby properties
+                      run 'java -help' for a list of other Java options
+  -l                enable line ending processing
+  -n                assume 'while gets(); ... end' loop around your script
+  -p                assume loop like -n but print line also like sed
+  -rlibrary         require the library, before executing your script
+  -s                enable some switch parsing for switches after script name
+  -S                look for the script in bin or using PATH environment variabl
+e
+  -T[level]         turn on tainting checks
+  -U                use UTF-8 as default internal encoding
+  -v                print version number, then turn on verbose mode
+  -w                turn warnings on for your script
+  -W[level]         set warning level; 0=silence, 1=medium, 2=verbose (default)
+  -x[directory]     strip off text before #!ruby line and perhaps cd to director
+y
+  -X[option]        enable extended option (omit option to list)
+  -y                enable parsing debug output
+  --copyright       print the copyright
+  --debug           sets the execution mode most suitable for debugger
+                      functionality
+  --jdb             runs JRuby process under JDB
+  --properties      List all configuration Java properties
+                      (prepend "jruby." when passing directly to Java)
+  --sample          run with profiling using the JVM's sampling profiler
+  --profile         run with instrumented (timed) profiling, flat format
+  --profile.api     activate Ruby profiler API
+  --profile.flat    synonym for --profile
+  --profile.graph   run with instrumented (timed) profiling, graph format
+  --profile.html    run with instrumented (timed) profiling, graph format in HTM
+L
+  --profile.json    run with instrumented (timed) profiling, graph format in JSO
+N
+  --profile.out     [file]
+  --profile.service <ProfilingService implementation classname>
+                    output profile data to [file]
+  --client          use the non-optimizing "client" JVM
+                      (improves startup; default)
+  --server          use the optimizing "server" JVM (improves perf)
+  --headless        do not launch a GUI window, no matter what
+  --dev             prioritize startup time over long term performance
+  --manage          enable remote JMX management and monitoring of JVM and JRuby
+
+  --bytecode        show the JVM bytecode produced by compiling specified code
+  --version         print the version
+  --disable-gems    do not load RubyGems on startup
+  --enable=feature[,...], --disable=feature[,...]
+                    enable or disable features
+Features:
+  gems                   rubygems (default: enabled)
+  did_you_mean           did_you_mean (default: enabled)
+  rubyopt                RUBYOPT environment variable (default: enabled)
+  frozen-string-literal  freeze all string literals (default: disabled)
+
+C:\>
+```
+
+You should check the JRuby **bin** folder as JRuby provides a JRuby version of most of all the standard Ruby commands and I installed JRuby at **C:\jruby-9.1.5.0\bin**.  You can use the **jgem** command to output a gem list and the gem list for a fresh JRuby install is shown below:
+
+```
+PS C:\> jgem list
+
+*** LOCAL GEMS ***
+
+did_you_mean (default: 1.0.1)
+jar-dependencies (default: 0.3.5)
+jruby-openssl (0.9.17 java)
+jruby-win32ole (0.8.5)
+json (1.8.3 java)
+minitest (default: 5.4.1)
+net-telnet (default: 0.1.1)
+power_assert (default: 0.2.3)
+psych (2.0.17 java)
+racc (1.4.14 java)
+rake (default: 10.4.2)
+rdoc (default: 4.2.0)
+test-unit (default: 3.1.1)
+PS C:\>
+```
+JRuby also ships with **jirb** as seen below:
+```
+PS C:\> jirb
+irb(main):001:0> 1+2
+=> 3
+irb(main):002:0> first ="john"
+=> "john"
+irb(main):003:0> last="Bampton"
+=> "Bampton"
+irb(main):004:0> "#{first} #{last}"
+=> "john Bampton"
+irb(main):005:0> (1..5) === 3
+=> true
+irb(main):006:0> exit
+PS C:\>
+```
 
 
-##XSLT XPath resources
+#XSLT XPath resources
 
 - [XPath Axes](http://www.w3schools.com/xml/xpath_axes.asp)
 - [XSLT 2.0 and XPath 2.0 Programmer's Reference, 4th Edition](http://www.wrox.com/WileyCDA/WroxTitle/XSLT-2-0-and-XPath-2-0-Programmer-s-Reference-4th-Edition.productCd-0470192747.html) - John owns this large essential book from [Michael Kay](https://en.wikipedia.org/wiki/Michael_Howard_Kay)
@@ -407,7 +543,7 @@ http://127.0.0.1:8808/ -> /favicon.ico
 - [XPath Wikipedia](https://en.wikipedia.org/wiki/XPath)
 
 
-##Helpful links
+#Helpful links
 
 Creating and highlighting code blocks - https://help.github.com/articles/creating-and-highlighting-code-blocks/
 
@@ -426,7 +562,7 @@ RegExp tester, Open source languages - https://regex101.com
 Emoji cheat sheet - http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 
-##Free online interactive easy quick courses
+#Free online interactive easy quick courses
 
 ###Learn Git
 
@@ -471,7 +607,7 @@ https://www.codecademy.com/en/skills/make-an-interactive-website
 https://www.codecademy.com/learn/learn-the-command-line
 
 
-##Essential Programmer Training
+#Essential Programmer Training
 
 ###Codewars
 
