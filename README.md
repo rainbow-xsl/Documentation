@@ -106,7 +106,7 @@ https://www.codeschool.com/courses/try-python
 
 http://discover-devtools.codeschool.com/
 
-##Learn Web
+###Learn Web
 
 https://www.codecademy.com/learn/learn-html-css
 
@@ -118,7 +118,7 @@ https://www.codecademy.com/learn/make-a-website
 
 https://www.codecademy.com/en/skills/make-an-interactive-website
 
-##Learn Miscellaneous
+###Learn Miscellaneous
 
 https://www.codecademy.com/learn/learn-the-command-line
 
