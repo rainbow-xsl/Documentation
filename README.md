@@ -86,6 +86,8 @@ https://try.github.io/levels/1/challenges/1
 
 https://www.codecademy.com/learn/learn-git
 
+https://www.udacity.com/course/how-to-use-git-and-github--ud775
+
 ###Learn Ruby
 
 http://tryruby.org/levels/1/challenges/0
