@@ -13,6 +13,7 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 - [CSS 3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3)
 - [typer.js](http://steven.codes/typerjs/)
+- [Google Charts](https://developers.google.com/chart/)
 
 
 ##Publishing System Hosting Options
@@ -92,6 +93,12 @@ http://tryruby.org/levels/1/challenges/0
 https://www.codecademy.com/learn/ruby
 
 https://www.codecademy.com/learn/learn-rails
+
+###Learn Python
+
+https://www.codecademy.com/learn/python
+
+https://www.codeschool.com/courses/try-python
 
 ###Learn DevTools
 
