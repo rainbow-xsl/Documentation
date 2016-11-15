@@ -31,6 +31,10 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
 
+#Interesting Skills
+- [Nokogiri](http://www.nokogiri.org/)
+- [Ruby Saxon::Xslt](https://github.com/fidothe/saxon-xslt)
+
 
 #Oracle VM VirtualBox
 
