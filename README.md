@@ -625,6 +625,10 @@ https://www.codecademy.com/learn/make-a-website
 
 https://www.codecademy.com/en/skills/make-an-interactive-website
 
+###Learn SQL
+
+https://www.codecademy.com/learn/learn-sql
+
 ###Learn Miscellaneous
 
 https://www.codecademy.com/learn/learn-the-command-line
