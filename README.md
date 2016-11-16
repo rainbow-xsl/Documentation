@@ -571,6 +571,9 @@ https://www.fastcompany.com/3040723/12-signs-your-company-has-an-enviable-workpl
 
 http://www.tiobe.com/tiobe-index/
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
 ##Programming Editors
 
 ###Commercial
@@ -594,6 +597,8 @@ Cross platform Linux, Mac, Windows Editor - https://www.sublimetext.com
 Microsoft Visual Studio - https://www.visualstudio.com
 
 Eclipse - https://eclipse.org/
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Helpful links
