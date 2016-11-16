@@ -1,8 +1,9 @@
 #Publishing System Documentation
 
-[&#8595;](#essential-programmer-training)
-
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 
 #Company website
 
@@ -16,11 +17,15 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [typer.js](http://steven.codes/typerjs/)
 - [Google Charts](https://developers.google.com/chart/)
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 
 #Publishing System Hosting Options
 
 - [Heroku](https://www.heroku.com/)
 - [Engine Yard](https://www.engineyard.com/)
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Highly sought after skills
@@ -35,6 +40,8 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 #Interesting Skills
 - [Nokogiri](http://www.nokogiri.org/)
 - [Ruby Saxon::Xslt](https://github.com/fidothe/saxon-xslt)
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Oracle VM VirtualBox
@@ -54,6 +61,8 @@ This section is dedicated to those that run Mac OS or Windows that need to run U
 8GB RAM, Quad Core CPU.
 
 More to come soon.
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Windows
@@ -402,6 +411,9 @@ http://127.0.0.1:8808/ -> /gem-server-rdoc-style.css
 http://127.0.0.1:8808/ -> /favicon.ico
 ```
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
 #JRuby
 
 [JRuby](http://jruby.org/) requires [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to be installed and the current version for Windows is Java 111. You can use the following command to see if Java is installed on your machine:
@@ -539,6 +551,8 @@ irb(main):006:0> exit
 PS C:\>
 ```
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 
 #XSLT XPath resources
 
@@ -546,6 +560,8 @@ PS C:\>
 - [XSLT 2.0 and XPath 2.0 Programmer's Reference, 4th Edition](http://www.wrox.com/WileyCDA/WroxTitle/XSLT-2-0-and-XPath-2-0-Programmer-s-Reference-4th-Edition.productCd-0470192747.html) - John owns this large essential book from [Michael Kay](https://en.wikipedia.org/wiki/Michael_Howard_Kay)
 - [XPath examples](https://msdn.microsoft.com/en-us/library/ms256086(v=vs.110).aspx)
 - [XPath Wikipedia](https://en.wikipedia.org/wiki/XPath)
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Helpful links
@@ -565,6 +581,8 @@ Ruby regular expression tester - http://rubular.com
 RegExp tester, Open source languages - https://regex101.com
 
 Emoji cheat sheet - http://www.webpagefx.com/tools/emoji-cheat-sheet/
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Free online interactive easy quick courses
