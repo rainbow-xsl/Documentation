@@ -617,7 +617,7 @@ PS C:\>
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-##Important Reading
+#Important Reading
 
 https://en.wikipedia.org/wiki/Technology_evangelist
 
@@ -628,7 +628,7 @@ http://www.tiobe.com/tiobe-index/
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
-##Programming Editors
+#Programming Editors
 
 ###Commercial
 
