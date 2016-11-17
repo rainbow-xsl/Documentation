@@ -1,3 +1,8 @@
+#Database
+
+- [Enum: Just Say No](#enum-just-say-no)
+- [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
+
 16 November 2016
 
 #Enum: Just Say No
@@ -43,6 +48,7 @@ So EVEN if you don't care about standards, EVEN IF you don't care that many stan
 
 There are better ways (standard ways) to handle discrete, defined lists. That’s what relational databases are all about. Enum may seem convenient, but it’s really a cheap shortcut that will come back to bite you in the end.
 
+[&#8595;](#database) [&#8593;](#publishing-system-documentation)
 ===========
 17 November 2016
 
@@ -85,3 +91,5 @@ Answer: Then we need to change the app's source code AND change the column names
 I find that that nearly every decision in database design can be explained as something that is done in order to optimize the database for one of these three areas: data integrity, speed, and maintainability.
 
 Rather than doing database design based on a large collection of "textbook rules" whose meanings and purposes are obscure, I like to use these key goals as a guiding philosophy.
+
+[&#8595;](#database) [&#8593;](#publishing-system-documentation)
