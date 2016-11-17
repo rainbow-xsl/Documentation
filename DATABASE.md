@@ -1,7 +1,53 @@
 #Database
 
-- [Enum: Just Say No](#enum-just-say-no)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
+- [Enum: Just Say No](#enum-just-say-no)
+
+
+17 November 2016
+
+#Database Design: Three Areas of Optimization
+
+Real database design is more than just creating a database schema that "works."
+
+Real database design means creating a database schema that works well. It should work well now, and it should work well in the future, as a project continues to be used and (in all likelihood) changes as new features are added or new situations are encountered.
+
+Whenever I engage in the task of "database design" -- whether I'm designing a database from scratch or redesigning an existing database -- I like to explain to project owners, project managers, and development teams that I'm focusing on three areas of optimization:
+
+- data integrity
+- speed
+- maintainability
+
+This helps everybody (including myself) stay focused on important goals and helps explain why I make the decisions that I make. These are straightforward concepts that everybody from non-technical people to highly experienced programmers can understand.
+
+If you think about it, these same goals (or "areas of optimization") should seem very similar to key "best practices" used in non-database programming.
+
+In practice, it is rare that I find a database project which needs to be optimized for some other goal.
+
+Here are simple examples of these optimization concepts:
+
+[optimization for: data integrity]
+Question: Why do we need to add a foreign key constraint to this column?
+
+Answer: This will help guarantee that valid data is always stored in this column which references a foreign key. Even if a programmer messes up with integrity checking at the source code level, or even if a back-end database user attempts to inset invalid data, this foreign key constraint will ensure that only valid data is input into the table.
+
+[optimization for: speed]
+Question? Why do we need to add an index to this column? The table already works without it?
+
+Answer: This column is used by the front end as a key search field. The system will return results much faster if we index it.
+
+[optimization for: maintainability]
+Question: Why do we have to change these column names? The app is already written to use "location_ID" in most tables, and "location_Id" in a few tables.
+
+Answer: Then we need to change the app's source code AND change the column names so that they all match. Things may work now. But as soon as anybody starts making changes, somebody will mis-type the column name, and case-sensitive source code will fail to work.
+
+
+I find that that nearly every decision in database design can be explained as something that is done in order to optimize the database for one of these three areas: data integrity, speed, and maintainability.
+
+Rather than doing database design based on a large collection of "textbook rules" whose meanings and purposes are obscure, I like to use these key goals as a guiding philosophy.
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
+
 
 16 November 2016
 
@@ -47,51 +93,6 @@ But if you had a separate table for "status_types," it would take a microsecond 
 So EVEN if you don't care about standards, EVEN IF you don't care that many standard database tools and techniques won't know what to make of enums, and EVEN if you don't think your database schema will ever migrate to another type of database... you could still run into major headaches if you use enum.
 
 There are better ways (standard ways) to handle discrete, defined lists. That’s what relational databases are all about. Enum may seem convenient, but it’s really a cheap shortcut that will come back to bite you in the end.
-
-[&#8595;](#watch-this-space) [&#8593;](#database)
-
-
-17 November 2016
-
-#Database Design: Three Areas of Optimization
-
-Real database design is more than just creating a database schema that "works."
-
-Real database design means creating a database schema that works well. It should work well now, and it should work well in the future, as a project continues to be used and (in all likelihood) changes as new features are added or new situations are encountered.
-
-Whenever I engage in the task of "database design" -- whether I'm designing a database from scratch or redesigning an existing database -- I like to explain to project owners, project managers, and development teams that I'm focusing on three areas of optimization:
-
-- data integrity
-- speed
-- maintainability
-
-This helps everybody (including myself) stay focused on important goals and helps explain why I make the decisions that I make. These are straightforward concepts that everybody from non-technical people to highly experienced programmers can understand.
-
-If you think about it, these same goals (or "areas of optimization") should seem very similar to key "best practices" used in non-database programming.
-
-In practice, it is rare that I find a database project which needs to be optimized for some other goal.
-
-Here are simple examples of these optimization concepts:
-
-[optimization for: data integrity]
-Question: Why do we need to add a foreign key constraint to this column?
-
-Answer: This will help guarantee that valid data is always stored in this column which references a foreign key. Even if a programmer messes up with integrity checking at the source code level, or even if a back-end database user attempts to inset invalid data, this foreign key constraint will ensure that only valid data is input into the table.
-
-[optimization for: speed]
-Question? Why do we need to add an index to this column? The table already works without it?
-
-Answer: This column is used by the front end as a key search field. The system will return results much faster if we index it.
-
-[optimization for: maintainability]
-Question: Why do we have to change these column names? The app is already written to use "location_ID" in most tables, and "location_Id" in a few tables.
-
-Answer: Then we need to change the app's source code AND change the column names so that they all match. Things may work now. But as soon as anybody starts making changes, somebody will mis-type the column name, and case-sensitive source code will fail to work.
-
-
-I find that that nearly every decision in database design can be explained as something that is done in order to optimize the database for one of these three areas: data integrity, speed, and maintainability.
-
-Rather than doing database design based on a large collection of "textbook rules" whose meanings and purposes are obscure, I like to use these key goals as a guiding philosophy.
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
 
