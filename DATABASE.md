@@ -48,7 +48,7 @@ So EVEN if you don't care about standards, EVEN IF you don't care that many stan
 
 There are better ways (standard ways) to handle discrete, defined lists. That’s what relational databases are all about. Enum may seem convenient, but it’s really a cheap shortcut that will come back to bite you in the end.
 
-[&#8595;](#database) [&#8593;](#publishing-system-documentation)
+[&#8595;](#database) [&#8593;](#database)
 ===========
 17 November 2016
 
@@ -92,4 +92,4 @@ I find that that nearly every decision in database design can be explained as so
 
 Rather than doing database design based on a large collection of "textbook rules" whose meanings and purposes are obscure, I like to use these key goals as a guiding philosophy.
 
-[&#8595;](#database) [&#8593;](#publishing-system-documentation)
+[&#8595;](#database) [&#8593;](#database)
