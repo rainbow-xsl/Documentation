@@ -2,6 +2,14 @@
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
 
+* [Company Website](#company-website)
+* [Publishing System Hosting Options](#publishing-system-hosting-options)
+* [Highly sought after skills](#highly-sought-after-skills)
+* [Interesting Skills](#interesting-skills)
+* [Oracle VM VirtualBox](#oracle-vm-virtualbox)
+* [Git](#git)
+* [Windows](#windows) 
+
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
@@ -468,7 +476,7 @@ http://127.0.0.1:8808/ -> /favicon.ico
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
-#JRuby
+##JRuby
 
 [JRuby](http://jruby.org/) requires [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to be installed and the current version for Windows is Java 111. You can use the following command to see if Java is installed on your machine:
 
