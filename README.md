@@ -13,6 +13,15 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [Nobuyoshi Nakada](https://github.com/nobu)
 - [Yukihiro "Matz" Matsumoto](https://github.com/matz)
 
+##Star and Watch these projects
+
+- [The Real Beast](https://github.com/jbampton/jbampton.github.io)
+- [Linux](https://github.com/torvalds/linux)
+- [Ruby](https://github.com/ruby/ruby)
+- [Phalcon Framework](https://github.com/phalcon/cphalcon)
+- [Laravel](https://github.com/laravel/laravel)
+- [Rails](https://github.com/rails/rails)
+- [Foundation](https://github.com/zurb/foundation-sites)
 
 We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
 
