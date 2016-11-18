@@ -1,7 +1,57 @@
 #Database
 
+- [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
+
+
+18 November 2016
+
+#Normalization Example: States
+
+I want to discuss one specific data concept: States.
+
+As with most any specific data concept example, this discussion serves a dual purpose. It presents ideas about how a specific type of data can be handled, and it also serves as an example of root principles.
+
+So we will talk about how to handle states, which is a common, useful concept. But this example also illustrates principles for optimizing the database for data integrity (through normalization) and for speed.
+
+Sometimes I see databases which store contact information, such as a user's address, and the table with contact information has a varchar (text string) column for "state."
+
+Often these are varchar columns that contain values such as "NY", "AZ" and "NSW."
+
+I never do this. I never store states as text strings. Even in a small, simple database, it is better to store states in a separate table, such as "states" or "locations", and then link an address to that table through an integer foreign key link.
+
+So I may have a table like this:
+<br />ID	Name
+<br />1	Alabama
+<br />2	Alaska
+<br />3	Arizona
+
+And in the table with contact information, we would store only the integer that references the states/locations table like this:
+state_ID = 1
+
+(This means "Alabama.")
+
+This will save all kinds of headaches.
+
+What we do NOT want to have happen is somebody else on the team coming to us and saying:
+
+"Why are there only 90 customers from New York in this report? I know there are 100."
+
+And then we look in the database and we have to tell them:
+"There are 90 customers from New York, but there are also 5 customers from "N.Y.", 4 customers from "NY", and 1 customer from "NewYork."
+
+If we store states as blind text strings in a varchar field, then we are asking to have problems with data integrity. People don't always spell state names correctly. People don't always get the abbreviations correct. So we want to constraint the possible values for states to a list that contains ONLY possible values.
+
+And it isn't that complicated to do so. There are only 50 states in the United States. Even if we add in all states and territories from Australia and the United States, and all provinces from Canada, and even the special military service mailing codes, there are still fewer than 100 items in our "states" table.
+
+If our database encompasses other countries, then we can license a comprehensive location data source, build our own or (most likely) either leave this blank or allow for a general "province" field for other countries. In practice, most international addresses work fine with a city name, a postal code and a country name, and don't need a "state" field.
+
+Normalizing states (storing values as foreign key-referencing integers such as 1, 4, and 40) instead of using varchars ("AL" or "Alabama") will also improve the speed of your database.
+
+If you have only a few hundred records, it won't matter. But if you have a large number of records, such as a hundred thousand or more, you will definitely notice a difference between how fast it takes your database to do a search for all records using a text string ("AL") versus an integer (1).
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
 
 
 17 November 2016
@@ -47,6 +97,7 @@ I find that that nearly every decision in database design can be explained as so
 Rather than doing database design based on a large collection of "textbook rules" whose meanings and purposes are obscure, I like to use these key goals as a guiding philosophy.
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
+
 
 
 16 November 2016
