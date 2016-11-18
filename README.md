@@ -2,6 +2,23 @@
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  The best practice way to add to this documenatation is to [fork](https://help.github.com/articles/fork-a-repo/) and create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
 
+We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
+
+- [Company Website](#company-website)
+- [Publishing System Hosting Options](#publishing-system-hosting-options)
+- [Highly sought after skills](#highly-sought-after-skills)
+- [Interesting Skills](#interesting-skills)
+- [Oracle VM VirtualBox](#oracle-vm-virtualbox)
+- [Git](#git)
+- [Windows](#windows)
+- [XSLT XPath resouces](#xslt-xpath-resources)
+- [Important Reading](#important-reading)
+- [Programming Editors](#programming-editors)
+- [Helpful links](#helpful-links)
+- [Free online interactive easy quick courses](#free-online-interactive-easy-quick-courses)        
+- [Essential Programmer Training](#essential-programmer-training)   
+
+
 #Company website
 
 - [GitHub Pages](https://pages.github.com/)
@@ -40,24 +57,7 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 - [Jekyll](https://github.com/jekyll/jekyll)
 - [kramdown](https://github.com/gettalong/kramdown)
 - [Sass](https://github.com/sass/sass)
-
-We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
-
-- [Company Website](#company-website)
-- [Publishing System Hosting Options](#publishing-system-hosting-options)
-- [Highly sought after skills](#highly-sought-after-skills)
-- [Interesting Skills](#interesting-skills)
-- [Oracle VM VirtualBox](#oracle-vm-virtualbox)
-- [Git](#git)
-- [Windows](#windows)
-- [XSLT XPath resouces](#xslt-xpath-resources)
-- [Important Reading](#important-reading)
-- [Programming Editors](#programming-editors)
-- [Helpful links](#helpful-links)
-- [Free online interactive easy quick courses](#free-online-interactive-easy-quick-courses)        
-- [Essential Programmer Training](#essential-programmer-training)     
-           
-           
+                      
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
