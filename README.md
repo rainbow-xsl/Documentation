@@ -2,6 +2,21 @@
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  The best practice way to add to this documenatation is to [fork](https://help.github.com/articles/fork-a-repo/) and create a [pull request](https://help.github.com/articles/creating-a-pull-request/).
 
+#Company website
+
+- [GitHub Pages](https://pages.github.com/)
+- [Jekyll](https://jekyllrb.com/)
+- [kramdown](http://kramdown.gettalong.org/)
+- [Sass](http://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS 3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3)
+- [typer.js](http://steven.codes/typerjs/)
+- [Google Charts](https://developers.google.com/chart/)
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
 #Task to do after you first join GitHub
 
 ##Follow all these people
@@ -46,21 +61,6 @@ We are looking to use the containerization technology [Docker](https://www.docke
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
-#Company website
-
-- [GitHub Pages](https://pages.github.com/)
-- [Jekyll](https://jekyllrb.com/)
-- [kramdown](http://kramdown.gettalong.org/)
-- [Sass](http://sass-lang.com/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [CSS 3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3)
-- [typer.js](http://steven.codes/typerjs/)
-- [Google Charts](https://developers.google.com/chart/)
-
-[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
-
 #Publishing System Hosting Options
 
 - [Heroku](https://www.heroku.com/)
@@ -78,9 +78,13 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
 
+
 #Interesting Skills
 - [Nokogiri](http://www.nokogiri.org/)
 - [Ruby Saxon::Xslt](https://github.com/fidothe/saxon-xslt)
+- [SAXON The XSLT and XQuery Processor](http://saxon.sourceforge.net/)
+- [Saxonica](http://www.saxonica.com/welcome/welcome.xml)
+- [Apache FOP](https://xmlgraphics.apache.org/fop/)
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
