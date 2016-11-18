@@ -1,6 +1,6 @@
 #Database
 
-- [Normalization Example: States](#states)
+- [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
 
@@ -22,10 +22,10 @@ Often these are varchar columns that contain values such as "NY", "AZ" and "NSW.
 I never do this. I never store states as text strings. Even in a small, simple database, it is better to store states in a separate table, such as "states" or "locations", and then link an address to that table through an integer foreign key link.
 
 So I may have a table like this:
-ID	Name
-1	Alabama
-2	Alaska
-3	Arizona
+<br />ID	Name
+<br />1	Alabama
+<br />2	Alaska
+<br />3	Arizona
 
 And in the table with contact information, we would store only the integer that references the states/locations table like this:
 state_ID = 1
