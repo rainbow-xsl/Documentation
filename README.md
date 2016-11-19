@@ -74,6 +74,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Ruby on Rails](http://rubyonrails.org/)
 - [Ubuntu](https://www.ubuntu.com/)
 - [Prawn PDF](https://github.com/prawnpdf/prawn)
+- [Prawn Table](https://github.com/prawnpdf/prawn-table)
 - [The Ruby Toolbox - PDF Generation](https://www.ruby-toolbox.com/categories/pdf_generation)
 - [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
