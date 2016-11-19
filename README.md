@@ -86,6 +86,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [SAXON The XSLT and XQuery Processor](http://saxon.sourceforge.net/)
 - [Saxonica](http://www.saxonica.com/welcome/welcome.xml)
 - [Apache FOP](https://xmlgraphics.apache.org/fop/)
+- [JRuby](http://jruby.org/) 
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
