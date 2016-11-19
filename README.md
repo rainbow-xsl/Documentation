@@ -112,7 +112,9 @@ More to come soon.
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
-#Git
+#Windows
+
+##Git
 
 This project is using [Git](https://git-scm.com/) and GitHub.  The easiest way to get started with GitHub is to use [GitHub Desktop](https://desktop.github.com/).  Below shows how to get help on the **git** command:
 
@@ -165,8 +167,6 @@ PS C:\Users\beast>
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
-#Windows
 
 ##Ruby
 
@@ -651,6 +651,25 @@ irb(main):005:0> (1..5) === 3
 irb(main):006:0> exit
 PS C:\>
 ```
+
+##Jekyll
+
+```
+PS C:\work\github\jbampton.github.io> bundle exec jekyll serve
+Configuration file: C:/work/github/jbampton.github.io/_config.yml
+            Source: C:/work/github/jbampton.github.io
+       Destination: C:/work/github/jbampton.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 1.18 seconds.
+ Auto-regeneration: enabled for 'C:/work/github/jbampton.github.io'
+Configuration file: C:/work/github/jbampton.github.io/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2016-11-20 01:31:42 ...done in 15.700119 seconds.
+      Regenerating: 1 file(s) changed at 2016-11-20 01:32:08 ...done in 0.56543 seconds.
+```
+
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
