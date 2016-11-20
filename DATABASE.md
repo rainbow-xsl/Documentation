@@ -1,9 +1,98 @@
 #Database
 
+- [Why "ID"?](#why-id)
 - [Naming ID Columns](#naming-id-columns)
 - [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
+
+
+20 November 2016
+
+#Why "ID"?
+
+In a previous entry I suggested that when designing a new database, the best name for an "ID column" ("primary identity column" or "primary key column") is simply:
+
+ID
+
+Yet... if you have seen a wide range of databases created by different people using different RDBMS, covering different periods of time, you may have seen many different naming conventions. Here are some examples:
+
+We have have seen various databases which use different names:
+ID
+id
+Id
+state_ID
+state_id
+state_Id
+STATEID
+StateID
+StateId
+stateid
+state_num
+state_primary_key
+
+Why is "ID" the best name to use?
+
+Let us put aside the interesting fact that some software and source code libraries specifically look for this name and provide some benefits when using it. That is really a minor point. And it is NOT a "universal" thing. Not by a longshot.
+
+I like to use "ID" because it is very readable and instantly recognizable. It really stands out as something distinctive and different from the other column names. Look at this example of column names for a single table:
+<br />ID
+<br />name
+<br />abbreviation
+<br />description
+<br />population
+<br />capitol
+
+I like the way that the capitalized form "ID" stands out.
+
+Also, if I reference this column name in a foreign key column (linking from another table), I like how it stands out from the table name:
+
+state_ID
+
+I want to consistently use the same primary identity column name as a part of foreign key column names. When I use "ID", I can pick that part of a column name out quickly and easily.
+
+One final question:
+Why don't I use a naming convention like this for the ID columns:
+<br />STATES
+<br />state_ID
+<br />name
+<br />abbreviation
+
+I have seen this in some database designs. In these designs, there are NO primary identity columns named "ID". These columns are all named something different.
+
+Don't do this.
+
+This introduces unnecessary complexity and duplication into your database design.
+
+Your goal should be to make the database design as simple and as non-duplicative as necessary.
+
+If you add a version of a table name in the table's primary identity column, then your database is NOT as simple.
+
+Instead of having ONE name for ID columns ("ID"), you end up having many. You would theoretically have as many different names for ID columns as you have tables.
+
+A table with 20 table would have 20 different tables would have 20 different names for primary identity columns. 20 is NOT as simple as 1.
+
+And you have also introduced duplication. Because what you really have, if you reference the "full name" of these columns is this:
+<br />states.state_ID
+<br />users.user_ID
+<br />products.product_ID
+
+See how each column DUPLICATES information?
+
+If I have an ID column within "states" table, I don't need to name the column "state_ID." I already know that the "ID" column within the states table is the ID column for states.
+
+See how these column names avoid unnecessary duplication:
+<br />states.ID
+<br />users.ID
+<br />products.ID
+
+So to summarize my advice on this topic:
+<br />- keep it simple
+<br />- make it easy to read
+<br />- avoid duplication
+<br />- use "ID"
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
 
 
 19 November 2016
