@@ -1,8 +1,90 @@
 #Database
 
+- [Naming ID Columns](#naming-id-columns)
 - [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
+
+
+19 November 2016
+
+#Naming ID Columns
+
+I want to discuss one of the most important aspects of database design: naming ID columns.
+
+What are "ID columns"? This is one simple and common way to refer to primary identity columns.
+
+For example, in a table like this:
+<br />STATES
+<br />ID	101
+<br />Name	Alabama
+<br />Code	AL
+
+...the "ID column" is the first column: "ID".
+
+This is the column within the table that is intended to be unchanging, and it is intended to be the most reliable way to reference a row in a table. These columns are also known as the "primary key." There are some technical distinctions between the complete meanings of these terms, but that is a topic for another day.
+
+Many techniques impact two or even three areas of database optimization (data integrity, speed, and maintainability.) But naming ID columns is something that is really ONLY related to ONE of these areas of optimization: maintainability.
+
+This IS important, even though the database engine itself doesn't really care. Your database is not going to run faster due to the column names you use. The technical ability of your database to be able to enforce data integrity will not change.
+
+But your ability of human user and developers to maintain the database will be significantly impacted.
+
+Your naming conventions can positively or negatively impact the human actions that have an effect on data integrity. So I suppose we could say that how you name ID columns impacts "one and a half" areas of optimization.
+
+We have have seen various databases which use different names:
+ID
+id
+Id
+state_ID
+state_id
+state_Id
+STATEID
+StateID
+StateId
+stateid
+state_num
+state_primary_key
+
+How should you name your ID columns?
+
+The most important answer to this question is:
+
+CONSISTENTLY.
+
+Because if you are consistent, your database will be maintainable.
+
+If you are not consistent, then mistakes will happen. Subtle bugs will creep in that are hard to track down. The ad hoc queries that users write won't work.
+
+BE CONSISTENT!
+
+So many choices! Argh! Just tell me what to do!
+
+Okay: Here is a short answer to what to do:
+
+If you are coming to an already-established database and you are being asked to use it but not recreate its naming conventions, then just BE CONSISTENT. Use whatever naming convention is already in place.
+
+If you are adding a new table to a database in which ID columns all look like this: "id", then that is what you should use.
+
+Simple.
+
+But if you are designing a database from scratch, you can use the convention you prefer. This may be a slightly "controversial" decision. The preferred format may vary depending on the specific RDBMS being used.
+
+I will tell you that in working with MySQL databases, the convention I see most often in "best practices" databases, and the convention I personally use in creating new database is to always use: ID
+
+Two letters only. Capitalized. Always and consistently when I create new databases, I use "ID."
+
+Some MySQL tools actually recognize this column name and provide you with a few extra benefits when you use "ID." For example, phpMyAdmin will automatically provide you with in-line editing functionality on query result screens in which the ID column is "ID", but doesn't provide this functionality when ID columns are spelled or capitalized differently. Maybe this will change in the future, but for now, it's a significant advantage.
+
+So when confronted with the question about how to name an ID column, my simple answer is:
+
+- Use the naming convention already in place within your database
+- Use "ID"
+
+(Tomorrow, I'll explain more reasons for using "ID".)
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
+
 
 
 18 November 2016
@@ -22,10 +104,10 @@ Often these are varchar columns that contain values such as "NY", "AZ" and "NSW.
 I never do this. I never store states as text strings. Even in a small, simple database, it is better to store states in a separate table, such as "states" or "locations", and then link an address to that table through an integer foreign key link.
 
 So I may have a table like this:
-<br />ID	Name
-<br />1	Alabama
-<br />2	Alaska
-<br />3	Arizona
+ID	Name
+1	Alabama
+2	Alaska
+3	Arizona
 
 And in the table with contact information, we would store only the integer that references the states/locations table like this:
 state_ID = 1
