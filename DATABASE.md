@@ -1,10 +1,58 @@
 #Database
 
+- [When to Index?](#when-to-index)
 - [Why "ID"?](#why-id)
 - [Naming ID Columns](#naming-id-columns)
 - [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
+
+
+21 November 2016
+
+#When to Index?
+
+Indexing is a awesome. It really is like a magic bullet to turbo-charge the speed of your database system.
+
+But that doesn't mean you should index everything all the time. High-quality database design requires an awareness of what indexing means for your database, including when to use it and when to NOT use it.
+
+One of the most common "big mistakes" I have seen in database schemas created by programmers inexperienced in database design is that they don't add any indices to tables that really need them.
+
+They might be a programmer creating a new app or web application, and they create a database that their system needs. They add a few test rows, connect the database to the front-end, and everything works fine. So they think they're done.
+
+And they are done. As long as the table is small. For a few rows or a few hundred rows, having an index is not going to matter. But then their system grows. More people use it. Now they have 10,000+ rows in that table, or 100,000+ rows... And their whole system starts to get slower, and slower, and slower. Why?
+
+Because their system involves a search on the "name" column within that 100,000+ table. That search is taking a long time, although it was previously very fast. Add an index to the "name" column and like magic, the queries begin returning results instantaneously, just like when the table only had 100 rows in it.
+
+Don't wait to add an index that the table will need when it grows.
+
+If a table might grow to be large enough that indexing will make a difference, add the index to the columns that need it right from the beginning. This will mean your design is really "finished" and you won't need to monitor the system for the point in time when it starts to slow down because the table is getting too big to operate quickly without additional indices.
+
+So we know that adding an index to a table can speed it up tremendously. Does that mean we should simply index every column right from the start?
+
+No. Don't index every column.
+
+I only add an index to a column if it will be beneficial. I don't do it by default.
+
+There are many tables that may have a dozen or a few dozen columns, but which only need to have one or two of them indexed.
+
+Here is a very simple guide about when to add an index to a column:
+<br />- add an index to columns that are uses as SEARCH criteria
+<br />- add an index to columns that are used in a "SORT BY" clause
+<br />- add an index to columns that need to be referenced by FOREIGN KEY LINKS
+<br />- add an index to columns that are used in any JOINS
+
+Note that there other index types aside from the standard index: unique contraints and primary key indices and others. We will not discuss those index types today, except to point out that if a column already has been indexed using one of these other index types, it does NOT need to be indexed again. You don't need to index the same column twice. A unique constraint index (for example) does double duty: preventing the same value from being used twice in a column AND also provides the speed optimization that a non-unique index provides.
+
+Can't I just index everything and not think about it?
+
+No, you shouldn't do that. Although indexing is great when you can benefit it, indexing isn't "free."
+
+Every index you add DOES increase overhead on the system. Indices take up file space. Indices require additional processing time when inserting rows. Indexing columns unnecessarily will create a net drain on your system rather than a boost.
+
+A truly interactive information system which connects many relational tables to each other (joins, foreign keys), allows a user to conduct searches and to sort data using different criteria is likely to have MANY indexed columns. But it won't have EVERY column be indexed.
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
 
 
 20 November 2016
