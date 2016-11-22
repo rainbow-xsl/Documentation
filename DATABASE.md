@@ -1,11 +1,77 @@
 #Database
 
+- [camelCase or underscore_case?](#camelcase-or-underscore_case)
 - [When to Index?](#when-to-index)
 - [Why "ID"?](#why-id)
 - [Naming ID Columns](#naming-id-columns)
 - [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
+
+
+
+22 November 2016
+
+#camelCase or underscore_case?
+
+The formatting of table names and column names within a database schema has been debated for decades. The same discussion occurs in relation to programming source code.
+
+The discussions (arguments) go round-and-round. They will probably never end.
+
+I don't want to write anything lengthy about this. Let me point out a few general facts:
+
+- This relates specifically to optimizing for maintainability. This doesn't make any difference when it comes to optimizing for data integrity or speed.
+
+- The most important decision on this topic is to be consistent. Stick with one format throughout the database design. Otherwise, people will type in the wrong column names and table names, and that will cause errors.
+
+- Although some RDBMS are case-insensitive with regards to table names and column names, some are case-sensitive. Moreover, the programming languages you use to interact with a database may be case-sensitive. Don't ever be sloppy with regards to case. Always capitalize names consistently. Never use alternatively-capitalized variants to signify something different.
+
+Before I whether or not you should use camelCase or underscore_case for naming tables and columns, let me point out that there ARE other alternatives, which I find even less preferable than these two naming conventions:
+<br />- alllowercaseruntogether
+<br />- ALLCAPSRUNTOGETHER
+<br />- spaces between words
+<br />- dashes-between-words
+<br />- ALL_CAPS_WITH_UNDERSCORES
+
+These alternative formats, which you may see in some databases, are all inferior. They are either difficult to read, or they are error prone. Some of these formats might even seem impossible, such as naming tables and columns with spaces in between words. In most RDBMS, something like this IS possible, it's just a very bad idea, because such a name only works by enclosing it to force the system to recognize it as a string, such as by enclosing it within double-quotes. That's just asking for trouble, though. Also, there may be places where it won't work at all, so you would end up with a table schema which is not very portable.
+
+I do not use camelCase in table and column names. I use underscore_case.
+
+Two main reasons:
+I find that underscore_case is easier to read.
+
+Not everybody agrees. But I think most people agree.
+
+The other main reason I use underscore_case: It is programmatically very easy to resolve into a human-readable word, phrase or label.
+
+For example, if I want to automatically convert a table to a form that is presented on a user-interface screen to be seen by human users, I might want to convert the name of a table and its columns to titles and labels. It is easy for any program (including a "replace" command within SQL) to convert underscores to spaces, and thus make a human friendly label. Like this:
+
+original_product_name => original product name
+
+But what if a column is like this:
+originalProductName
+
+Not so easy is it? A clever programmer using an application programming language can come up with an elegant function to handle this. But can it be done easily within a pure SQL query statement? Not really.
+
+And even the cleverest programmer is going to run into trouble working with something like this:
+
+originalProductUPCCode
+
+How would you easily convert that to something human-readable? It's not even very readable in camelCase.
+
+Compare that to this:
+
+original_product_UPC_code
+
+You can see how this is much easier to read as part of a schema. And it is much easier to utilize in automated name conversion scripts and functions.
+
+My advice:
+<br />- Be consistent.
+<br />- Don't go to war over naming conventions if you're a guest in an already-established database.
+<br />- if you have a choice, use underscore_case.
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
+
 
 
 21 November 2016
