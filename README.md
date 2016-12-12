@@ -18,6 +18,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Free online interactive easy quick courses](#free-online-interactive-easy-quick-courses)        
 - [Essential Programmer Training](#essential-programmer-training)   
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 
 #Company website
 
@@ -78,6 +80,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [The Ruby Toolbox - PDF Generation](https://www.ruby-toolbox.com/categories/pdf_generation)
 - [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Interesting Skills
