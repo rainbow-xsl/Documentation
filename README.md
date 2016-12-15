@@ -12,6 +12,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Windows](#windows)
   - [Git](#git)
   - [Ruby](#ruby)
+    - [hashcheck.rb](#the-first-ruby-tool)
   - [JRuby](#jruby)
   - [Jekyll](#jekyll)
 - [XSLT XPath resouces](#xslt-xpath-resources)
@@ -206,7 +207,26 @@ irb(main):001:0> "a8 83 e2 4b 9a 2b 38 31 70 e1 7c 37 2c ec 32 bd eb 28 04 eb c1
 irb(main):002:0>
 
 ```
-In future another task is to create a Ruby script that calls the **CertUtil** command to automate this process. More infomation on the **CertUtil** command is shown below:
+
+###The first Ruby Tool
+
+**hashcheck.rb** is a Ruby based command line program that checks file checksums and runs as shown below:
+```
+PS C:\Users\john\Downloads> ruby .\hashcheck.rb .\rubyinstaller-2.3.1-x64.exe SHA256
+a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c
+PS C:\Users\john\Downloads>
+```
+
+**hashcheck.rb** is shown below:
+
+```ruby
+#ARGV[0] is the file you want to check. ARGV[1] is the hash algorithm
+#Secure_Hash_Algorithm choices: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
+shellcommand = `CertUtil -hashfile "#{ARGV[0]}" "#{ARGV[1]}"`
+puts shellcommand.inspect.split('\n')[1].split.join
+```
+
+More infomation on the **CertUtil** command is shown below:
 
 ```
 C:\Users\beast\Downloads>CertUtil -?
