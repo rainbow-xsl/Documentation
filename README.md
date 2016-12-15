@@ -6,6 +6,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 
 - [Company Website](#company-website)
 - [Tasks to do after you first join GitHub](#tasks-to-do-after-you-first-join-github)
+  - [Follow all these people](#follow-all-these-people)
+  - [Star and Watch some projects](#star-and-watch-some-projects)
 - [Publishing System Hosting Options](#publishing-system-hosting-options)
 - [Highly sought after skills](#highly-sought-after-skills)
 - [Interesting Skills](#interesting-skills)
@@ -19,6 +21,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [XSLT XPath resouces](#xslt-xpath-resources)
 - [Important Reading](#important-reading)
 - [Programming Editors](#programming-editors)
+  - [Commercial](#commercial)
+  - [Open source](#open-source)
 - [Helpful links](#helpful-links)
 - [Free online interactive easy quick courses](#free-online-interactive-easy-quick-courses)        
 - [Essential Programmer Training](#essential-programmer-training)   
