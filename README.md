@@ -65,9 +65,11 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Laravel](https://github.com/laravel/laravel)
 - [Rails](https://github.com/rails/rails)
 - [Foundation](https://github.com/zurb/foundation-sites)
+- [GitHub Pages Ruby Gem](https://github.com/github/pages-gem)
 - [Jekyll](https://github.com/jekyll/jekyll)
 - [kramdown](https://github.com/gettalong/kramdown)
 - [Sass](https://github.com/sass/sass)
+- [Elixir](https://github.com/elixir-lang/elixir)
                       
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
