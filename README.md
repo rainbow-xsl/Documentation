@@ -5,6 +5,7 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
 
 - [Company Website](#company-website)
+- [Tasks to do after you first join GitHub](#tasks-to-do-after-you-first-join-github)
 - [Publishing System Hosting Options](#publishing-system-hosting-options)
 - [Highly sought after skills](#highly-sought-after-skills)
 - [Interesting Skills](#interesting-skills)
@@ -40,7 +41,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
-#Task to do after you first join GitHub
+#Tasks to do after you first join GitHub
 
 ##Follow all these people
 
