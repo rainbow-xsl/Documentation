@@ -688,6 +688,8 @@ irb(main):006:0> exit
 PS C:\>
 ```
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 ##Jekyll
 
 ```
@@ -833,6 +835,8 @@ https://www.codecademy.com/learn/learn-sql
 ###Learn Miscellaneous
 
 https://www.codecademy.com/learn/learn-the-command-line
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Essential Programmer Training
