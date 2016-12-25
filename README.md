@@ -105,6 +105,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Saxonica](http://www.saxonica.com/welcome/welcome.xml)
 - [Apache FOP](https://xmlgraphics.apache.org/fop/)
 - [JRuby](http://jruby.org/) 
+- [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
