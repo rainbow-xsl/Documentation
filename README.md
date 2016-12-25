@@ -19,6 +19,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
   - [JRuby](#jruby)
   - [Jekyll](#jekyll)
 - [OS X](#os-x)
+- [Ubuntu](#ubuntu)
 - [XSLT XPath resouces](#xslt-xpath-resources)
 - [Important Reading](#important-reading)
 - [Programming Editors](#programming-editors)
@@ -762,6 +763,10 @@ _site
 [Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't. [Homebrew Formula](http://brewformulas.org) are written in Ruby. You install Homebrew via the command line as shown in my short [Homebrew install video](https://www.youtube.com/watch?v=Ird_MGf3m0Q). If you install Homebrew you should try to run brew update daily. I made another [video on Homebrew](https://www.youtube.com/watch?v=HuHtuxcIbhs) that shows the typical brew update command.
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
+#Ubuntu
+......
 
 
 #XSLT XPath resources
