@@ -20,6 +20,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
   - [Jekyll](#jekyll)
 - [OS X](#os-x)
 - [Ubuntu](#ubuntu)
+- [Python](#python)
 - [XSLT XPath resouces](#xslt-xpath-resources)
 - [Important Reading](#important-reading)
 - [Programming Editors](#programming-editors)
@@ -768,7 +769,15 @@ _site
 
 
 #Ubuntu
-......
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
+#Python
+
+I trialled this new Python implementation [Anaconda Python](https://www.continuum.io/).
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #XSLT XPath resources
