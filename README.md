@@ -770,6 +770,17 @@ _site
 
 #Ubuntu
 
+Running Ubuntu 16.04 LTS.
+
+```
+beast@beast-VirtualBox:~$ python --version
+Python 2.7.12
+beast@beast-VirtualBox:~$ python3 --version
+Python 3.5.2
+beast@beast-VirtualBox:~$ 
+```
+
+
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
