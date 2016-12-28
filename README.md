@@ -775,8 +775,12 @@ Running Ubuntu 16.04 LTS.
 ```
 beast@beast-VirtualBox:~$ python --version
 Python 2.7.12
+beast@beast-VirtualBox:~$ which python
+/usr/bin/python
 beast@beast-VirtualBox:~$ python3 --version
 Python 3.5.2
+beast@beast-VirtualBox:~$ which python3
+/usr/bin/python3
 beast@beast-VirtualBox:~$ 
 ```
 
