@@ -767,6 +767,18 @@ _site
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
+##rbenv
+
+```
+$ rbenv global
+2.4.0
+$ ruby -v
+ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
+$ rbenv global system
+$ ruby -v
+ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin16]
+$ 
+```
 
 #Ubuntu
 
