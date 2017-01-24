@@ -186,6 +186,8 @@ to read about a specific subcommand or concept.
 PS C:\Users\beast>
 ```
 
+Here is a quick read on [merge commits and how to prevent them](http://www.monarchdigital.com/blog/2013-02-08/merge-commits-and-how-prevent-them-git-rebase).
+
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
@@ -823,6 +825,8 @@ https://en.wikipedia.org/wiki/Technology_evangelist
 https://www.fastcompany.com/3040723/12-signs-your-company-has-an-enviable-workplace-culture
 
 http://www.tiobe.com/tiobe-index/
+
+http://www.monarchdigital.com/blog/2013-02-08/merge-commits-and-how-prevent-them-git-rebase
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
