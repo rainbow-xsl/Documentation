@@ -1,5 +1,8 @@
 #Database
 
+- [What is a database?](#what-is-a-database)
+- [When to use NULL](#when-to-use-null)
+- [What RDBMS should you use?](#what-rdbms-should-you-use)
 - [Avoid NULL (usually)](#avoid-null-usually)
 - [camelCase or underscore_case?](#camelcase-or-underscore_case)
 - [When to Index?](#when-to-index)
@@ -8,6 +11,138 @@
 - [Normalization Example: States](#normalization-example-states)
 - [Database Design: Three Areas of Optimization](#database-design-three-areas-of-optimization)
 - [Enum: Just Say No](#enum-just-say-no)
+
+
+
+26 November 2016
+
+#What is a database?
+
+This may seem like a very simple question, but it can have different answers, depending on who you ask.
+
+In order to avoid confusion, it is important to be aware of how different people might perceive this question.
+
+If you were asked to provide a quote for creating a database, what kind of number would you provide?
+
+Because I can think of many different numbers. I could create a database for $5.00. I could do it for $100. Or $10,000. Or $1 million.
+
+In theory, you could launch a database management tool, create a new, empty database instance, and you're done! You created a database. That will be $5.00 please.
+
+That is usually not what people mean, though.
+
+Typically when I discuss "designing a database," I am referring to the act of creating a database schema, which is primarily the tables and columns needed to store all data necessary for a specific project.
+
+But people who are not database designers, or may not have any kind of technical expertise at all, may have very different perceptions of what a "database" is.
+
+They may expect a database to have data in it.
+
+They may expect a database to have a comprehensive front-end.
+
+They may think of a "database" as being something like "IMDb.com," which has a sophisticated front end, fancy graphics, and a list of all possible movies, TV shows, and casts.
+
+So before embarking on a database project, one needs to define what it is that will be included in the delivered "database"?
+- What are all the project specifications?
+- What are all the available sample data files?
+- Will the database use explicit foreign keys or just implicit linking names?
+- Will data need to be loaded into the database?
+- Will there be human-friendly views for displaying database data?
+- Will the system need to have automated data-loading tools?
+- Will the system need to have tools for manually entering data?
+- Will the system need to have data-editing tools?
+- Will the system need a front end? What kind?
+
+Anybody who is a project owner or project manager of an information system which includes a back-end database should be aware of how the simple word "database" may signify different things to different people, including database designers.
+
+Database designers and programmers who create databases should be aware that when they refer to a "database," different people will have different perceptions of what this entails.
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
+
+
+25 November 2016
+
+#When to use NULL
+
+I previously wrote that optimal database design will avoid using columns that allow NULL. A database schema will be faster, easier to maintain, and easier to program for if you mostly avoid allowing NULL values.
+
+But there ARE times when allowing a NULL value makes sense. Sometimes your column setting should be to "allow NULL."
+
+The main reason for this is when you have a column whose value really does need to differentiate between null and a default value.
+
+For text string columns (varchar), this is rarely the case. But for many other datatypes, this can make a difference.
+
+Let's consider numbers. If possible, I like to avoid using NULL for number columns as well. For example if I have inventory count column, I would prefer to use zero as a default and not allow null. This would mean that the system will display zero inventory for a product if the value is not known. Rather than allow null, the default for the column is set to zero.
+
+But what if the system demands a distinction between "zero inventory" and "we don't know the inventory"? Then there are two ways to handle this:
+<br />- We could set the inventory column to allow null
+<br />- Or we could use an additional boolean column to indicate that the inventory is unknown.
+
+Both of these are valid options. But note that the second option actually requires an additional column. So it actually requires a more complex database schema, and potentially more complex coding.
+
+The right way to handle this situation will depend on the needs of the project.
+
+But keep in mind that if you use "zero" to indicate BOTH meanings: "I don't know what the inventory is" and "I checked, and I verified that the inventory is zero"... that you are introducing ambiguity into the system unless you do something to differentiate these meanings.
+
+Here is another example of when it would be a good idea to NOT allow null for a numeric field:
+
+The latitude and longitude of a location can be stored as a pair of decimal values. Here is an example:
+<br />Latitude: 33.428606
+<br />Longitude: -111.927360
+
+But what if you want to store a location in the database before you know the latitude and longitude?
+
+You COULD disallow NULL for these columns and set their default to zero.
+
+But the problem with that is: Zero is a legitimate value for a latitude or longitude. Zero signifies the equator or the Prime Meridian.
+
+So if you set the default value to zero, and disallow NULL, how do you know if any given value in the database is unknown versus actually being at the zero position?
+
+You can't use a negative number as a placeholder, either (e.g. "-1" or "-99"), because negative values are legitimate values as well. (And that would be kind of deceptive anyway!)
+
+So I would set these columns to allow null, and I would record them as null in the database if the information was not provided... if the data was submitted without latitude and longitude info.
+
+There are other reasons to use NULL. This is the main reason.
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
+
+
+24 November 2016
+
+#What RDBMS should you use?
+
+The abbreviation "RDBMS" is short for "relational database management system."
+
+Although we don't always think of it as such, an RDBMS is a software application, like Microsoft Word or Adobe Photoshop. It needs to run on a computer somewhere. It is different in the sense that we typically do not launch it independently on our own computer. In a typical information system, an RDBMS is running on a remotely accessible server and allows many users to connect to it from various "front-end" applications, such as a mobile app, a web application, or a desktop application.
+
+An RDBMS may be hosting multiple databases concurrently. It may allow one, a few dozen, or many thousands of users to connect to it concurrently.
+
+Which should you use?
+
+I don't know. It depends on your situation. Some RDBMS are free and open-source. Some cost money to purchase or use. Some will work on your server of choice. Some won't. Some will work with specific front-end software that you want to use. Some won't.
+
+There are many considerations that go into choosing an RDBMS. But a key thing to understand is that all of them can utilize database designs which are optimized for these key criteria:
+<br />data integrity
+<br />speed
+<br />maintainability
+
+The same RDBMS can be hosted on a server which runs quickly or not so quickly. Some commercial hosts (such as AWS) intentionally throttle (limit) the speed of their databases for customers at lower-paying tiers.
+
+For most information systems of small to moderate size, the choice of a specific RDBMS is not going to be the key factor in the speed and efficiency of your system. More important factors are:
+<br />- where it is hosted
+<br />- how you use it
+
+When a database-based information system has a query which runs slowly, a page that loads slowly, an update that takes a long time, a report that makes you wait, etc...
+
+Nearly always, if your database system is having speed problems, it is NOT because you are using MS SQL Server instead of Oracle, or because you are using MySQL instead of PostgreSQL.
+
+It isn't the choice of the RDBMS that is causing the problem. The problem stems from one of these causes:
+<br />- the database design
+<br />- the SQL query design
+<br />- how the application source code was written
+<br />- the host server settings and configuration (such as memory, available hard drive, etc.)
+
+[&#8595;](#watch-this-space) [&#8593;](#database)
+
+
 
 
 23 November 2016
