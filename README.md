@@ -5,18 +5,32 @@ First up, if you would like to add to this documentation, GitHub uses [Markdown]
 We are looking to use the containerization technology [Docker](https://www.docker.com/) and maybe [Vagrant](https://www.vagrantup.com/). This project is primarily using Ruby so have a quick read of the results from the [2016 Rails Survey](http://rails-hosting.com/2016/index.html).
 
 - [Company Website](#company-website)
+- [Tasks to do after you first join GitHub](#tasks-to-do-after-you-first-join-github)
+  - [Follow all these people](#follow-all-these-people)
+  - [Star and Watch some projects](#star-and-watch-some-projects)
 - [Publishing System Hosting Options](#publishing-system-hosting-options)
 - [Highly sought after skills](#highly-sought-after-skills)
 - [Interesting Skills](#interesting-skills)
 - [Oracle VM VirtualBox](#oracle-vm-virtualbox)
-- [Git](#git)
 - [Windows](#windows)
+  - [Git](#git)
+  - [Ruby](#ruby)
+    - [hashcheck.rb](#the-first-ruby-tool)
+  - [JRuby](#jruby)
+  - [Jekyll](#jekyll)
+- [OS X](#os-x)
+- [Ubuntu](#ubuntu)
+- [Python](#python)
 - [XSLT XPath resouces](#xslt-xpath-resources)
 - [Important Reading](#important-reading)
 - [Programming Editors](#programming-editors)
+  - [Commercial](#commercial)
+  - [Open source](#open-source)
 - [Helpful links](#helpful-links)
 - [Free online interactive easy quick courses](#free-online-interactive-easy-quick-courses)        
 - [Essential Programmer Training](#essential-programmer-training)   
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Company website
@@ -34,7 +48,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
-#Task to do after you first join GitHub
+#Tasks to do after you first join GitHub
 
 ##Follow all these people
 
@@ -54,9 +68,12 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Laravel](https://github.com/laravel/laravel)
 - [Rails](https://github.com/rails/rails)
 - [Foundation](https://github.com/zurb/foundation-sites)
+- [GitHub Pages Ruby Gem](https://github.com/github/pages-gem)
 - [Jekyll](https://github.com/jekyll/jekyll)
 - [kramdown](https://github.com/gettalong/kramdown)
 - [Sass](https://github.com/sass/sass)
+- [Elixir](https://github.com/elixir-lang/elixir)
+- [Phoenix Framework](https://github.com/phoenixframework/phoenix)
                       
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
@@ -79,6 +96,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 
 #Interesting Skills
 - [Nokogiri](http://www.nokogiri.org/)
@@ -87,6 +106,8 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [Saxonica](http://www.saxonica.com/welcome/welcome.xml)
 - [Apache FOP](https://xmlgraphics.apache.org/fop/)
 - [JRuby](http://jruby.org/) 
+- [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
@@ -199,7 +220,26 @@ irb(main):001:0> "a8 83 e2 4b 9a 2b 38 31 70 e1 7c 37 2c ec 32 bd eb 28 04 eb c1
 irb(main):002:0>
 
 ```
-In future another task is to create a Ruby script that calls the **CertUtil** command to automate this process. More infomation on the **CertUtil** command is shown below:
+
+###The first Ruby Tool
+
+**hashcheck.rb** is a Ruby based command line program that checks file checksums and runs as shown below:
+```
+PS C:\Users\john\Downloads> ruby .\hashcheck.rb .\rubyinstaller-2.3.1-x64.exe SHA256
+a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c
+PS C:\Users\john\Downloads>
+```
+
+**hashcheck.rb** is shown below:
+
+```ruby
+#ARGV[0] is the file you want to check. ARGV[1] is the hash algorithm
+#Secure_Hash_Algorithm choices: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
+shellcommand = `CertUtil -hashfile "#{ARGV[0]}" "#{ARGV[1]}"`
+puts shellcommand.inspect.split('\n')[1].split.join
+```
+
+More infomation on the **CertUtil** command is shown below:
 
 ```
 C:\Users\beast\Downloads>CertUtil -?
@@ -652,8 +692,11 @@ irb(main):006:0> exit
 PS C:\>
 ```
 
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
 ##Jekyll
 
+I use the command
 ```
 PS C:\work\github\jbampton.github.io> bundle exec jekyll serve
 Configuration file: C:/work/github/jbampton.github.io/_config.yml
@@ -670,6 +713,96 @@ Configuration file: C:/work/github/jbampton.github.io/_config.yml
       Regenerating: 1 file(s) changed at 2016-11-20 01:32:08 ...done in 0.56543 seconds.
 ```
 
+to build this website locally for testing into the _site directory.
+The directory structure is shown below:
+
+```
+C:\work\github\jbampton.github.io>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 19DE-8B12
+
+ Directory of C:\work\github\jbampton.github.io
+
+09/21/2016  02:57 PM    <DIR>          .
+09/21/2016  02:57 PM    <DIR>          ..
+07/08/2016  04:21 AM                35 .gitignore
+07/08/2016  04:21 AM    <DIR>          .sass-cache
+09/21/2016  02:57 PM            11,856 about.md
+09/13/2016  05:55 PM                13 CNAME
+07/08/2016  04:21 AM    <DIR>          css
+07/08/2016  11:05 AM                47 devrun.sh
+07/08/2016  04:21 AM             1,291 feed.xml
+07/08/2016  09:56 AM                95 Gemfile
+07/08/2016  09:55 AM             3,154 Gemfile.lock
+07/11/2016  03:27 AM               529 index.html
+07/08/2016  04:38 AM    <DIR>          js
+09/13/2016  05:55 PM             1,045 _config.yml
+07/08/2016  04:21 AM    <DIR>          _includes
+07/08/2016  04:21 AM    <DIR>          _layouts
+10/25/2016  05:59 AM    <DIR>          _posts
+07/11/2016  03:27 AM    <DIR>          _sass
+10/25/2016  07:06 AM    <DIR>          _site
+               9 File(s)         18,065 bytes
+              10 Dir(s)  84,169,297,920 bytes free
+
+C:\work\github\jbampton.github.io>
+```
+
+Then in '.gitignore' as seen below we ignore the _site directory from version control.
+
+```
+_site
+.sass-cache
+.jekyll-metadata
+```
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
+#OS X
+
+##Homebrew
+
+[Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't. [Homebrew Formula](http://brewformulas.org) are written in Ruby. You install Homebrew via the command line as shown in my short [Homebrew install video](https://www.youtube.com/watch?v=Ird_MGf3m0Q). If you install Homebrew you should try to run brew update daily. I made another [video on Homebrew](https://www.youtube.com/watch?v=HuHtuxcIbhs) that shows the typical brew update command.
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+##rbenv
+
+```
+$ rbenv global
+2.4.0
+$ ruby -v
+ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
+$ rbenv global system
+$ ruby -v
+ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin16]
+$ 
+```
+
+#Ubuntu
+
+Running Ubuntu 16.04 LTS.
+
+```
+beast@beast-VirtualBox:~$ python --version
+Python 2.7.12
+beast@beast-VirtualBox:~$ which python
+/usr/bin/python
+beast@beast-VirtualBox:~$ python3 --version
+Python 3.5.2
+beast@beast-VirtualBox:~$ which python3
+/usr/bin/python3
+beast@beast-VirtualBox:~$ 
+```
+
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
+
+
+#Python
+
+I trialled this new Python implementation [Anaconda Python](https://www.continuum.io/).
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
@@ -789,6 +922,8 @@ https://www.codecademy.com/learn/learn-sql
 ###Learn Miscellaneous
 
 https://www.codecademy.com/learn/learn-the-command-line
+
+[&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
 
 #Essential Programmer Training
