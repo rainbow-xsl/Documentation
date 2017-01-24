@@ -199,6 +199,7 @@ When NULL-able columns should be used can be discussed another time.
 [&#8595;](#watch-this-space) [&#8593;](#database)
 
 
+
 22 November 2016
 
 #camelCase or underscore_case?
