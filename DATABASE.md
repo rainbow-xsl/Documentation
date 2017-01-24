@@ -13,6 +13,7 @@
 - [Enum: Just Say No](#enum-just-say-no)
 
 
+
 26 November 2016
 
 #What is a database?
@@ -140,6 +141,7 @@ It isn't the choice of the RDBMS that is causing the problem. The problem stems 
 <br />- the host server settings and configuration (such as memory, available hard drive, etc.)
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
+
 
 
 
