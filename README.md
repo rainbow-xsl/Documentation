@@ -223,7 +223,7 @@ irb(main):002:0>
 
 ```
 
-###The first Ruby Tool
+### The first Ruby Tool
 
 **hashcheck.rb** is a Ruby based command line program that checks file checksums and runs as shown below:
 ```
