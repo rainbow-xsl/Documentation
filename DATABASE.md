@@ -1,4 +1,4 @@
-#Database
+# Database
 
 - [What is a database?](#what-is-a-database)
 - [When to use NULL](#when-to-use-null)
@@ -15,7 +15,7 @@
 
 26 November 2016
 
-#What is a database?
+# What is a database?
 
 This may seem like a very simple question, but it can have different answers, depending on who you ask.
 
@@ -59,7 +59,7 @@ Database designers and programmers who create databases should be aware that whe
 
 25 November 2016
 
-#When to use NULL
+# When to use NULL
 
 I previously wrote that optimal database design will avoid using columns that allow NULL. A database schema will be faster, easier to maintain, and easier to program for if you mostly avoid allowing NULL values.
 
@@ -106,7 +106,7 @@ There are other reasons to use NULL. This is the main reason.
 
 24 November 2016
 
-#What RDBMS should you use?
+# What RDBMS should you use?
 
 The abbreviation "RDBMS" is short for "relational database management system."
 
@@ -145,7 +145,7 @@ It isn't the choice of the RDBMS that is causing the problem. The problem stems 
 
 23 November 2016
 
-#Avoid NULL (usually)
+# Avoid NULL (usually)
 
 Columns in SQL database tables can have values. Their value can also be set to NULL. Whether or not to allow an individual column to be set to NULL is an important decision in database design.
 
@@ -201,7 +201,7 @@ When NULL-able columns should be used can be discussed another time.
 
 22 November 2016
 
-#camelCase or underscore_case?
+# camelCase or underscore_case?
 
 The formatting of table names and column names within a database schema has been debated for decades. The same discussion occurs in relation to programming source code.
 
@@ -265,7 +265,7 @@ My advice:
 
 21 November 2016
 
-#When to Index?
+# When to Index?
 
 Indexing is a awesome. It really is like a magic bullet to turbo-charge the speed of your database system.
 
@@ -312,7 +312,7 @@ A truly interactive information system which connects many relational tables to 
 
 20 November 2016
 
-#Why "ID"?
+# Why "ID"?
 
 In a previous entry I suggested that when designing a new database, the best name for an "ID column" ("primary identity column" or "primary key column") is simply:
 
@@ -400,7 +400,7 @@ So to summarize my advice on this topic:
 
 19 November 2016
 
-#Naming ID Columns
+# Naming ID Columns
 
 I want to discuss one of the most important aspects of database design: naming ID columns.
 
@@ -481,7 +481,7 @@ So when confronted with the question about how to name an ID column, my simple a
 
 18 November 2016
 
-#Normalization Example: States
+# Normalization Example: States
 
 I want to discuss one specific data concept: States.
 
@@ -530,7 +530,7 @@ If you have only a few hundred records, it won't matter. But if you have a large
 
 17 November 2016
 
-#Database Design: Three Areas of Optimization
+# Database Design: Three Areas of Optimization
 
 Real database design is more than just creating a database schema that "works."
 
@@ -576,7 +576,7 @@ Rather than doing database design based on a large collection of "textbook rules
 
 16 November 2016
 
-#Enum: Just Say No
+# Enum: Just Say No
 
 There is a time and place for everything, so the saying goes. And I agree this is true for most database concepts and techniques.
 
@@ -621,5 +621,5 @@ There are better ways (standard ways) to handle discrete, defined lists. That’
 
 [&#8595;](#watch-this-space) [&#8593;](#database)
 
-#Watch This Space
+# Watch This Space
 ...for more database tips!
