@@ -1,6 +1,6 @@
 # Publishing System Documentation
 
-[Database](DATABASE.md)
+### [Home](https://therealbeast.github.io) [Docs](README.md) [Database](DATABASE.md)
 
 First up, if you would like to add to this documentation, GitHub uses [Markdown](https://daringfireball.net/projects/markdown/) and here's a great 3 minute [GitHub guide](https://guides.github.com/features/mastering-markdown/) on mastering markdown.  The best practice way to add to this documenatation is to [fork](https://help.github.com/articles/fork-a-repo/) and create a [pull request](https://help.github.com/articles/creating-a-pull-request/). The easiest way to start using GitHub is to use [GitHub Desktop](https://desktop.github.com/).
 
