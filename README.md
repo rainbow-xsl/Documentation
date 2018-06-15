@@ -46,6 +46,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [CSS 3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3)
 - [typer.js](http://steven.codes/typerjs/)
 - [Google Charts](https://developers.google.com/chart/)
+- [YAML](http://yaml.org/)
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
@@ -55,11 +56,14 @@ We are looking to use the containerization technology [Docker](https://www.docke
 ## Follow all these people
 
 - [The Real Beast](https://github.com/jbampton)
-- [Preston Hunter](https://github.com/prestonhunter)
 - [Linus Torvalds](https://github.com/torvalds)
 - [Jose Valim](https://github.com/josevalim)
+- [Guido van Rossum](https://github.com/gvanrossum)
 - [Nobuyoshi Nakada](https://github.com/nobu)
 - [Yukihiro "Matz" Matsumoto](https://github.com/matz)
+- [Kenneth Reitz](https://github.com/kennethreitz)
+- [Fabien Potencier](https://github.com/fabpot)
+- [Mike Bostock](https://github.com/mbostock)
 
 ## Star and Watch some projects
 
