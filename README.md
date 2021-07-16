@@ -34,7 +34,6 @@ We are looking to use the containerization technology [Docker](https://www.docke
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 # Company website
 
 - [GitHub Pages](https://pages.github.com/)
@@ -50,12 +49,11 @@ We are looking to use the containerization technology [Docker](https://www.docke
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 # Tasks to do after you first join GitHub
 
 ## Follow all these people
 
-- [The Real Beast](https://github.com/jbampton)
+- [The Real Beast](https://github.com/johnbampton)
 - [Linus Torvalds](https://github.com/torvalds)
 - [Jose Valim](https://github.com/josevalim)
 - [Guido van Rossum](https://github.com/gvanrossum)
@@ -67,7 +65,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 
 ## Star and Watch some projects
 
-- [The Real Beast](https://github.com/jbampton/jbampton.github.io)
+- [The Real Beast](https://john.roquesbeach.workers.dev/)
 - [Linux](https://github.com/torvalds/linux)
 - [Ruby](https://github.com/ruby/ruby)
 - [Phalcon Framework](https://github.com/phalcon/cphalcon)
@@ -83,14 +81,12 @@ We are looking to use the containerization technology [Docker](https://www.docke
                       
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 # Publishing System Hosting Options
 
 - [Heroku](https://www.heroku.com/)
 - [Engine Yard](https://www.engineyard.com/)
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Highly sought after skills
 
@@ -104,7 +100,6 @@ We are looking to use the containerization technology [Docker](https://www.docke
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 # Interesting Skills
 - [Nokogiri](http://www.nokogiri.org/)
 - [Ruby Saxon::Xslt](https://github.com/fidothe/saxon-xslt)
@@ -114,9 +109,7 @@ We are looking to use the containerization technology [Docker](https://www.docke
 - [JRuby](http://jruby.org/) 
 - [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Oracle VM VirtualBox
 
@@ -137,7 +130,6 @@ This section is dedicated to those that run Mac OS or Windows that need to run U
 More to come soon.
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Windows
 
@@ -196,7 +188,6 @@ Here is a quick read on [merge commits and how to prevent them](http://www.monar
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 ## Ruby
 
 Using [Ruby](https://www.ruby-lang.org/en/) (a programmer's best friend) we can harness the power of [RubyGems](https://rubygems.org/).  
@@ -216,6 +207,7 @@ CertUtil -hashfile pathToFileToCheck [HashAlgorithm]
 [HashAlgorithm](https://en.wikipedia.org/wiki/Secure_Hash_Algorithm) choices: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
 
 An example of checking the RubyInstaller checksum with the **CertUtil** command is show below as well as running [irb](http://ruby-doc.org/stdlib-2.0.0/libdoc/irb/rdoc/IRB.html) to remove the single spaces between each set of two characters:
+
 ```
 PS C:\Users\beast\Downloads> CertUtil -hashfile .\rubyinstaller-2.3.1-x64.exe SHA256
 SHA256 hash of file .\rubyinstaller-2.3.1-x64.exe:
@@ -226,12 +218,12 @@ irb(main):001:0> "a8 83 e2 4b 9a 2b 38 31 70 e1 7c 37 2c ec 32 bd eb 28 04 eb c1
 .join
 => "a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c"
 irb(main):002:0>
-
 ```
 
 ### The first Ruby Tool
 
 **hashcheck.rb** is a Ruby based command line program that checks file checksums and runs as shown below:
+
 ```
 PS C:\Users\john\Downloads> ruby .\hashcheck.rb .\rubyinstaller-2.3.1-x64.exe SHA256
 a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c
@@ -404,7 +396,9 @@ PS C:\> ruby -v
 ruby 2.3.1p112 (2016-04-26 revision 54768) [x64-mingw32]
 PS C:\>
 ```
+
 You can find about more about the installled Ruby by typing the next command:
+
 ```
 PS C:\> ruby -h
 Usage: C:\Ruby23-x64\bin\ruby.exe [switches] [--] [programfile] [arguments]
@@ -433,8 +427,8 @@ Usage: C:\Ruby23-x64\bin\ruby.exe [switches] [--] [programfile] [arguments]
 PS C:\>
 ```
 
-
 Once you have installed Ruby you will have to get used to using the [gem command](http://guides.rubygems.org/rubygems-basics/).  Help on the gem command is shown below:
+
 ```
 C:\>gem -h
 RubyGems is a sophisticated package manager for Ruby.  This is a
@@ -466,6 +460,7 @@ basic help message containing pointers to more information.
 ```
 
 You can use the **gem list** command to list your installed local gems as seen below:
+
 ```
 C:\>gem list
 
@@ -547,7 +542,9 @@ tzinfo (1.2.2)
 unicode-display_width (1.1.1, 1.1.0)
 wdm (0.1.1)
 ```
+
 Another way to see more information on the installed RubyGems on your system is bring up the **gem server** locally hosted webpage as seen below:
+
 ```
 PS C:\Users\beast> gem server
 Server started at http://[::]:8808
@@ -562,7 +559,6 @@ http://127.0.0.1:8808/ -> /favicon.ico
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 ## JRuby
 
 [JRuby](http://jruby.org/) requires [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to be installed and the current version for Windows is Java 111. You can use the following command to see if Java is installed on your machine:
@@ -575,6 +571,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 
 C:\>
 ```
+
 Once you install JRuby you can check it's installed by running the next command:
 
 ```
@@ -584,9 +581,10 @@ jruby 9.1.5.0 (2.3.1) 2016-09-07 036ce39 Java HotSpot(TM) 64-Bit Server VM 25.10
 
 C:\>
 ```
-You can find out more about JRuby by running the next command:
-```
 
+You can find out more about JRuby by running the next command:
+
+```
 C:\>jruby -h
 Usage: jruby [switches] [--] [programfile] [arguments]
   -0[octal]         specify record separator (\0, if no argument)
@@ -683,7 +681,9 @@ rdoc (default: 4.2.0)
 test-unit (default: 3.1.1)
 PS C:\>
 ```
+
 JRuby also ships with **jirb** as seen below:
+
 ```
 PS C:\> jirb
 irb(main):001:0> 1+2
@@ -705,6 +705,7 @@ PS C:\>
 ## Jekyll
 
 I use the command
+
 ```
 PS C:\work\github\jbampton.github.io> bundle exec jekyll serve
 Configuration file: C:/work/github/jbampton.github.io/_config.yml
@@ -766,7 +767,6 @@ _site
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 # OS X
 
 ## Homebrew
@@ -804,16 +804,13 @@ beast@beast-VirtualBox:~$ which python3
 beast@beast-VirtualBox:~$ 
 ```
 
-
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Python
 
 I trialled this new Python implementation [Anaconda Python](https://www.continuum.io/).
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # XSLT XPath resources
 
@@ -835,7 +832,6 @@ http://www.tiobe.com/tiobe-index/
 http://www.monarchdigital.com/blog/2013-02-08/merge-commits-and-how-prevent-them-git-rebase
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Programming Editors
 
@@ -863,7 +859,6 @@ Eclipse - https://eclipse.org/
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
 
-
 # Helpful links
 
 Creating and highlighting code blocks - https://help.github.com/articles/creating-and-highlighting-code-blocks/
@@ -883,7 +878,6 @@ RegExp tester, Open source languages - https://regex101.com
 Emoji cheat sheet - http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Free online interactive easy quick courses
 
@@ -934,7 +928,6 @@ https://www.codecademy.com/learn/learn-sql
 https://www.codecademy.com/learn/learn-the-command-line
 
 [&#8595;](#essential-programmer-training) [&#8593;](#publishing-system-documentation)
-
 
 # Essential Programmer Training
 
